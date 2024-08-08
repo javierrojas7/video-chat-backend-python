@@ -29,7 +29,10 @@ def handle_connection():
 def handle_register_new_user(data):
     peers.append({
         'username': data['username'],
-        'socketId': data['socketId']
+        'socketId': data['socketId'],
+        'meet': data['meet'],
+        'user': data['user'],
+        'iduser': data['iduser']
     })
     print('registered new user')
     print(peers)
