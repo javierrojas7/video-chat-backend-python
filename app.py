@@ -147,5 +147,6 @@ def handle_group_call_closed_by_host(data):
         'groupCallRooms': group_call_rooms
     }, broadcast=True)
 
+
 if __name__ == '__main__':
     socketio.run(app, port=10000, debug=True)
